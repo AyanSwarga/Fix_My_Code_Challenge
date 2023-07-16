@@ -9,6 +9,7 @@ class Square:
     - height: The height of the square.
     """
 
+    
     def __init__(self, width=0, height=0):
         """
         Initializes a square with the given width and height.
@@ -20,6 +21,7 @@ class Square:
         self.width = width
         self.height = height
 
+    
     def area_of_my_square(self):
         """
         Calculates the area of the square.
@@ -29,6 +31,7 @@ class Square:
         """
         return self.width * self.height
 
+    
     def perimeter_of_my_square(self):
         """
         Calculates the perimeter of the square.
@@ -38,6 +41,7 @@ class Square:
         """
         return (self.width * 2) + (self.height * 2)
 
+    
     def __str__(self):
         """
         Returns a string representation of the square.
@@ -46,6 +50,7 @@ class Square:
         A string representation of the square in the format 'width/height'.
         """
         return "{}/{}".format(self.width, self.height)
+
 
 if __name__ == "__main__":
     s = Square(width=12, height=9)
